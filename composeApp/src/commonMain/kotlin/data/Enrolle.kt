@@ -1,5 +1,6 @@
 package data
 
+import androidx.compose.ui.layout.LayoutCoordinates
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -21,7 +22,8 @@ data class Enrolle(
     val phone: String,
     val uuid: String,
     val capturedCoordinates: String,
-    val verifiedCoordinates: String
+    val verifiedCoordinates: String,
+    val enrolmentComplete: Boolean,
 ){
 
     val fullName = "$firstName $middleName $lastName"
