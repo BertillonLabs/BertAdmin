@@ -16,7 +16,7 @@ class DashboardViewModel(
     private val _state = MutableStateFlow(DashboardState())
     val state = _state.asStateFlow()
 
-    private val store = Firebase.firestore(FirebaseBackend.app)
+    private val store = FirebaseBackend.firestore
     init {
         store.setSettings(persistenceEnabled = false)
     }

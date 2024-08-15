@@ -2,6 +2,7 @@ package data
 
 import dev.gitlive.firebase.Firebase
 import dev.gitlive.firebase.FirebaseOptions
+import dev.gitlive.firebase.firestore.firestore
 import dev.gitlive.firebase.initialize
 
 object FirebaseBackend {
@@ -14,4 +15,5 @@ object FirebaseBackend {
     )
 
     val app = Firebase.initialize(options = options)
+    val firestore = Firebase.firestore(app)
 }
