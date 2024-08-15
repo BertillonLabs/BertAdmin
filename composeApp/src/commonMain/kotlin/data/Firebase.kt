@@ -15,5 +15,4 @@ object FirebaseBackend {
     )
 
     val app = Firebase.initialize(options = options)
-    val firestore = Firebase.firestore(app)
 }

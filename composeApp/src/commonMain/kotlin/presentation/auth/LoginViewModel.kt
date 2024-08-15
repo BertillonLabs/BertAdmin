@@ -19,7 +19,7 @@ class LoginViewModel(
     val state = _state.asStateFlow()
 
     private val auth = Firebase.auth(FirebaseBackend.app)
-    private val store = FirebaseBackend.firestore
+    private val store = Firebase.firestore(FirebaseBackend.app)
 
     init {
         viewmodelScope.launch {
