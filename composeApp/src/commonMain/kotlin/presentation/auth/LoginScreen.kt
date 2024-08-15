@@ -42,8 +42,8 @@ private fun LoginContent(
     state: LoginState,
     onLogin: (String, String) -> Unit
 ) {
-    var email by remember { mutableStateOf("admin@bertillonlabs.com") }
-    var password by remember { mutableStateOf("eldEvenItAgo") }
+    var email by remember { mutableStateOf("") }
+    var password by remember { mutableStateOf("") }
 
     Container(enableScroll = true) {
         Spacer(modifier = Modifier.weight(1f))
